@@ -35,7 +35,17 @@ id          first_name  last_name   email                  created_at           
 2           Hing        Huynh       hinghuynh@gmail.com.c  2014-05-13 20:55:37  2014-05-13 20:55:37
 
 ## Release 2: Multi-line commands
-<!-- paste your terminal output here -->
+
+sqlite> INSERT INTO users
+   ...> (first_name, last_name, email, created_at, updated_at)
+   ...> VALUES
+   ...> ('Kimmey', 'Lin', 'kimmy@devbootcamp.com', DATETIME('now'), DATETIME('now'));
+Error: column email is not unique
+sqlite> SELECT * FROM users;
+id          first_name  last_name   email                  created_at           updated_at         
+----------  ----------  ----------  ---------------------  -------------------  -------------------
+1           Kimmey      Lin         kimmy@devbootcamp.com  2014-05-13 20:53:43  2014-05-13 20:53:43
+2           Hing        Huynh       hinghuynh@gmail.com.c  2014-05-13 20:55:37  2014-05-13 20:55:37
 
 ## Release 3: Add a column
 <!-- paste your terminal output here -->
