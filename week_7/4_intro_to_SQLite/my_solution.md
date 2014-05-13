@@ -2,13 +2,6 @@
 
 ## Release 0: Create a dummy database
 
-hings-air:~ hinghuynh$ cat << EOF > ~/.sqliterc
-> .headers on
-> .mode column
-> EOF
-hings-air:~ hinghuynh$ sqlite3 dummy.db
--- Loading resources from /Users/hinghuynh/.sqliterc
-
 SQLite version 3.7.13 2012-07-17 17:46:21
 Enter ".help" for instructions
 Enter SQL statements terminated with a ";"
@@ -22,7 +15,24 @@ sqlite> CREATE TABLE users (
    ...> );
 
 ## Release 1: Insert Data 
-<!-- paste your terminal output here -->
+
+sqlite> INSERT INTO users
+   ...> (first_name, last_name, email, created_at, updated_at)
+   ...> VALUES
+   ...> ('Kimmey', 'Lin', 'kimmy@devbootcamp.com', DATETIME('now'), DATETIME('now'));
+sqlite> SELECT * FROM users;
+id          first_name  last_name   email                  created_at           updated_at         
+----------  ----------  ----------  ---------------------  -------------------  -------------------
+1           Kimmey      Lin         kimmy@devbootcamp.com  2014-05-13 20:53:43  2014-05-13 20:53:43
+sqlite> INSERT INTO users
+   ...> (first_name, last_name, email, created_at, updated_at)
+   ...> VALUES
+   ...> ('Hing', 'Huynh', 'hinghuynh@gmail.com.com', DATETIME('now'), DATETIME('now'));
+sqlite> SELECT * FROM users;
+id          first_name  last_name   email                  created_at           updated_at         
+----------  ----------  ----------  ---------------------  -------------------  -------------------
+1           Kimmey      Lin         kimmy@devbootcamp.com  2014-05-13 20:53:43  2014-05-13 20:53:43
+2           Hing        Huynh       hinghuynh@gmail.com.c  2014-05-13 20:55:37  2014-05-13 20:55:37
 
 ## Release 2: Multi-line commands
 <!-- paste your terminal output here -->
