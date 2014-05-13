@@ -6,7 +6,7 @@
 
 ### My Quiz Results:
 <!-- Include the link to your image (saved in the imgs folder) to display it inline. -->
-![alt tag](https://github.com/hinghuynh/phase_0_unit_3/blob/master/week_7/imgs/sqlzoo_quiz.jpg?raw=true
+![alt tag](https://github.com/hinghuynh/phase_0_unit_3/blob/master/week_7/imgs/sqlzoo_quiz.jpg?raw=true)
 
 
 
