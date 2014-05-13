@@ -48,7 +48,30 @@ id          first_name  last_name   email                  created_at           
 2           Hing        Huynh       hinghuynh@gmail.com.c  2014-05-13 20:55:37  2014-05-13 20:55:37
 
 ## Release 3: Add a column
-<!-- paste your terminal output here -->
+
+sqlite> ALTER TABLE users
+   ...> ADD nicknames VARCHAR(64);
+sqlite> SELECT * FROM users;
+id          first_name  last_name   email                  created_at           updated_at           nicknames 
+----------  ----------  ----------  ---------------------  -------------------  -------------------  ----------
+1           Kimmey      Lin         kimmy@devbootcamp.com  2014-05-13 20:53:43  2014-05-13 20:53:43            
+2           Hing        Huynh       hinghuynh@gmail.com.c  2014-05-13 20:55:37  2014-05-13 20:55:37            
+sqlite> UPDATE users
+   ...> SET nicknames='Kimchee'
+   ...> WHERE id=1;
+sqlite> SELECT * FROM users;
+id          first_name  last_name   email                  created_at           updated_at           nicknames 
+----------  ----------  ----------  ---------------------  -------------------  -------------------  ----------
+1           Kimmey      Lin         kimmy@devbootcamp.com  2014-05-13 20:53:43  2014-05-13 20:53:43  Kimchee   
+2           Hing        Huynh       hinghuynh@gmail.com.c  2014-05-13 20:55:37  2014-05-13 20:55:37            
+sqlite> UPDATE users
+   ...> SET nicknames='Hingo'
+   ...> WHERE id=2;
+sqlite> SELECT * FROM users;
+id          first_name  last_name   email                  created_at           updated_at           nicknames 
+----------  ----------  ----------  ---------------------  -------------------  -------------------  ----------
+1           Kimmey      Lin         kimmy@devbootcamp.com  2014-05-13 20:53:43  2014-05-13 20:53:43  Kimchee   
+2           Hing        Huynh       hinghuynh@gmail.com.c  2014-05-13 20:55:37  2014-05-13 20:55:37  Hingo 
 
 ## Release 4: Change a value
 <!-- paste your terminal output here -->
