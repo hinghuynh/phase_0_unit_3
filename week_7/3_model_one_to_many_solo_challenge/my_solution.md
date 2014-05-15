@@ -19,7 +19,25 @@ It's a one to Many relationship. A user can created infinite tweets.
 
 
 ## Release 4: SQL Statements
-<!-- Include your SQL Statements. How can you make markdown files show blocks of code? -->
+select tweets from a specific user
+```
+SELECT tweet_text FROM tweets WHERE user_id = 1;
+```
+
+the tweets from specific user made after last wednesday
+```
+SELECT tweet_text FROM tweets WHERE user_id = 1 AND created_at > '05/07/2014';
+```
+
+all tweets from a given twitter handle
+```
+SELECT tweet_text FROM tweets JOIN  users ON (user_id=id) WHERE name = 'hinghuynh';
+```
+
+get twitter handle associated with a given tweet id
+```
+SELECT name FROM users JOIN tweets ON (id=user_id) WHERE tweet_id = '9999';
+```
 
 ## Release 5: Reflection
 <!-- Be sure to add your reflection here!!! -->
