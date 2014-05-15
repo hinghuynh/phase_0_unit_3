@@ -1,7 +1,4 @@
 ```
-SQLite version 3.7.13 2012-07-17 17:46:21
-Enter ".help" for instructions
-Enter SQL statements terminated with a ";"
 sqlite> .schema
 CREATE TABLE customers (
   customer_id INTEGER PRIMARY KEY,
@@ -52,9 +49,7 @@ subscription_id  internet_package  speed       price       created_at           
 110              max plus          18          45          2014-05-14 22:28:45  2014-05-14 22:28:45
 ```
 ```
-sqlite> SELECT name, account_number, internet_package, price FROM customers JOIN internet_subscription
-   ...> ON (account_number=subscription_id)
-   ...> WHERE speed = 18;
+sqlite> SELECT name, account_number, internet_package, price FROM customers JOIN internet_subscription ON (account_number=subscription_id) WHERE speed = 18;
 name        account_number  internet_package  price     
 ----------  --------------  ----------------  ----------
 Kelly       106             max plus          45        
