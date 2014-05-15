@@ -93,4 +93,10 @@ id          first_name  last_name   email                  created_at           
 2           Hing        Huynh       hinghuynh@gmail.com.c  2014-05-13 20:55:37  2014-05-13 20:55:37  Hingo   
 ```
 ## Release 5: Reflect
-<!-- Add your reflection here -->
+This was good practice for SQL. The most difficult thing was figuring out the syntax
+for updating any of the user data. But after some google searching, I was able to
+find the proper syntax and get data to change.  I felt like I had better familiarity
+with SQL after this exercise.  I enjoyed being able to print out the changes to the 
+tables after editing them.  This exercise was a lot better than the schema creation
+exercises.
+
