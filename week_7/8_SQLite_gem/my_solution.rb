@@ -20,7 +20,7 @@ def print_some_other_states_reps
   other_reps.each { |rep| puts rep }
 end
 
-def print_longest_serving_reps(minimum_years)  #sorry guys, oracle needs me, i didn't finish this!
+def print_longest_serving_reps(minimum_years)  
   puts "LONGEST SERVING REPRESENTATIVES"
    $db.execute("SELECT name, years_in_congress FROM congress_members WHERE years_in_congress > #{minimum_years}").each {|x,y| puts "#{x} - #{y}" }
 end
@@ -76,10 +76,13 @@ print_lowest_grade_level_speakers(8)
 
 
 # REFLECTION- Include your reflection as a comment below.
-# How does the sqlite3 gem work?  What is the variable `$db` holding?  
-# Try to use your knowledge of ruby and OO to decipher this as well as h
-# ow the `#execute` method works.  Take a stab at explaining the line 
+# sqlite3 gem allows ruby programs to interface with the SQLite3 database engine.
+# $db is holding the database that you are calling to access data. 
+#
 # `$db.execute("SELECT name FROM congress_members WHERE years_in_congress 
-#   > #{minimum_years}")`.  Try to explain this as clearly as possible for 
-# your fellow students.  
-# If you're having trouble, find someone to pair on this explanation with you.
+#   > #{minimum_years}")` 
+# Using the data from congressmen_poll_data database, show the names of congress
+# members from the congress members table of those who have been in congress at
+# least the amount of years given in the argument of the method.
+
+
