@@ -12,6 +12,7 @@
 
 
 ### Reflection
+
 # This was a very long and boring exercise. THe format of the quizes were really 
 # difficult.  It felt like I was trying to debug someone else's code, which I find
 # extremely difficult, since I didn't write it myself. Another thing that I got 
