@@ -12,13 +12,7 @@
 # As a user, I want to add item with its quantity
  
 # Pseudocode
-# 
-# 
-# 
-# 
-# 
-# 
- 
+
  
 # Your fabulous code goes here....
 
