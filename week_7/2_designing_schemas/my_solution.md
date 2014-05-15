@@ -25,7 +25,8 @@
 Description of what you're modeling: 
 This is a schema for movie and theaters
 ![alt tag](https://github.com/hinghuynh/phase_0_unit_3/blob/master/week_7/imgs/one-to-one-movie.jpg?raw=true)
+
 This is a schema for customers and orders for In and Out Burgers
-![alt tag](https://github.com/hinghuynh/phase_0_unit_3/blob/master/week_7/imgs/many-to-many-restaurant.jpg.jpg?raw=true)
+![alt tag](https://github.com/hinghuynh/phase_0_unit_3/blob/master/week_7/imgs/many-to-many-restaurant.jpg?raw=true)
 
 ## Release 5: Reflection
