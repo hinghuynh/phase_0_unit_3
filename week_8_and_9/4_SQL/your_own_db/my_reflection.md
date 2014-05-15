@@ -7,4 +7,5 @@ amount of time it took to create each entry for every single customer took forev
 Is there a faster way than manually creating a single SQL statement for eachh 
 individual user?  I just really feel like there is more to learn, when it comes to
 writing efficient code for SQL  I didn't really enjoy this excerise and cerating
-ten entries seemed overkill.  This was definitely a tedious exercise.
+ten entries seemed overkill.  This was definitely a tedious exercise.  At least now
+I feel more competent with writing simple SQL statements.
