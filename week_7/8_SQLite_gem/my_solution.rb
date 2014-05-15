@@ -46,20 +46,11 @@ print_some_other_states_reps
 
 print_separator
 
-
-
 print_longest_serving_reps(35)
-# TODO - Print out the number of years served as well as the name of the longest running reps
-# output should look like:  Rep. C. W. Bill Young - 41 years
 
 print_separator
+
 print_lowest_grade_level_speakers(8)
-
-
-# TODO - Need to be able to pass the grade level as an argument, look in schema for "grade_current" column
-
-# TODO - Make a method to print the following states representatives as well:
-# (New Jersey, New York, Maine, Florida, and Alaska)
 
 
 ##### BONUS #######
