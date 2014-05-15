@@ -33,3 +33,10 @@ This is a schema for customers and orders for In and Out Burgers
 ![alt tag](https://github.com/hinghuynh/phase_0_unit_3/blob/master/week_7/imgs/many-to-many-restaurant.jpg?raw=true)
 
 ## Release 5: Reflection
+This exercise was pretty self-explainatory, pretty much all I had to do was replicate
+what the examples were shown using SQL designer. SQL designer as a program was fairly
+simple to use. The only difficult I had was thinking of my own schemas. What I originally
+thought to be a simple idea for a schema, easily could be complciated.  Now I have a 
+better idea how much data some sites actually store.  Creating a schema for In and Out
+Burgers was pretty fun. The exercises got pretty repetitive after doing a couple thou.
+
