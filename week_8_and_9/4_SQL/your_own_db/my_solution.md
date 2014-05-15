@@ -56,5 +56,4 @@ Kelly       106             max plus          45
 Pete        101             max plus          45        
 Susan       103             max plus          45        
 Dennis      110             max plus          45        
-sqlite> 
 ```
