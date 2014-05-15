@@ -13,9 +13,7 @@
  
 # Pseudocode
 
- 
-# Your fabulous code goes here....
-
+# Refactored Solution 
 class GroceryList 
   def initialize()
     @grocery_list = {}
@@ -63,3 +61,11 @@ list.delete('banana')
 list.included?('banana')
 list.show_list
  
+# Reflection
+# I really enjoyed pairing with RJ for this exercise. At first we had the 
+# grocery list as an array, which we found very difficult to add and manipulate
+# the data.  After we switched to using a has, everytime became much easier.
+# I enjoyed making the code more reader friendly, so that everytime you
+# called a method, you would actuallly print something for you to see.  Nothing
+# in this exercise was really tedious.
+
