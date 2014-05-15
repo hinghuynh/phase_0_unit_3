@@ -2,7 +2,7 @@
 
 ## Release 0: Users Fields
 ```
-name , screename, location, website, bio
+name, location, url, description
 ```
 ## Release 1: Tweet Fields
 ```
