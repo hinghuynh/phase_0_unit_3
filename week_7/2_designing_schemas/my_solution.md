@@ -23,6 +23,7 @@
 
 ## Release 4: Design your own Schema
 Description of what you're modeling: 
+
 This is a schema for movie and theaters
 ![alt tag](https://github.com/hinghuynh/phase_0_unit_3/blob/master/week_7/imgs/one-to-one-movie.jpg?raw=true)
 
