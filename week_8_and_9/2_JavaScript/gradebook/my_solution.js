@@ -18,22 +18,49 @@ var scores = [ [80, 70, 70, 100],
                [75, 70, 80, 75],
                [100, 90, 95, 85] ]
 
-
-
-
-
-
 // __________________________________________
 // Write your code below.
 
+function average(array){
+    total = 0;
+    for (var i=0 ; i < array.length; i++)
+    {
+      total += array[i];
+    }
+      return total/array.length;
+};
 
+var gradebook = {
+    Joseph: { testScores: scores[0] },
 
+    Susan: { testScores: scores[1] },
 
+    William: { testScores: scores[2] },
 
+    Elizabeth: { testScores: scores[3] },
+
+   getAverage: function getaverage(name){
+        for (var i=0; i < students.length; i++)
+            {
+            if (name === students[i]) {
+                return average(scores[i]);
+            }        
+        }
+    },
+
+    addScore: function addscore(name, score){
+        for (var i=0; i < students.length; i++)
+            {
+            if (name === students[i]) {
+                scores[i].push(score);
+            }        
+        }
+    }
+
+};
 
 // __________________________________________
 // Refactored Solution
-
 
 
 
@@ -101,7 +128,7 @@ assert(
   "6. "
 )
 
-gradebook.addScore("Susan", 80)
+ gradebook.addScore("Susan", 80)
 
 assert(
   (gradebook.Susan.testScores.length === 5
