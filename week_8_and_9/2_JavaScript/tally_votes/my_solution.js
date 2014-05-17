@@ -69,11 +69,26 @@ var officers = {
 // __________________________________________
 // Initial Solution
 
+for (var voter in votes) {
+    for (var office in votes[voter]) {
+            if (voteCount[office][votes[voter][office]] == undefined) {
+                voteCount[office][votes[voter][office]] = 1;
+            }
+            else {                                            
+                voteCount[office][votes[voter][office]] += 1;
+            }        
+     }
+}
 
-
-
-
-
+for (var position in voteCount ) {
+    var highestVote = 0;
+    for (var candidate in voteCount[position]){
+        if (voteCount[position][candidate] > highestVote) {
+            highestVote = voteCount[position][candidate];
+            officers[position] = candidate;
+        }   
+     }
+}
 
 // __________________________________________
 // Refactored Solution
