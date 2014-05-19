@@ -40,7 +40,7 @@ SELECT name FROM users JOIN tweets ON (id=user_id) WHERE tweet_id = '9999';
 ```
 
 ## Release 5: Reflection
-This was a pretty easy excercise as well. There wasn't realy anything that I struggled 
+This was a pretty easy exercise as well. There wasn't realy anything that I struggled 
 with. It took some time to figure out what inputs to add to the schema for twitter,
 because I don't use twitter, but after doing that creating all the SQL statements
 was fairly easy.  I didn't really enjoy this challenge, probably because I didn't get
