@@ -70,12 +70,4 @@ assert(
   "3. "
 )
 
-cardCheck(4408041234567893);
-cardCheck(4408041234567892);
-cardCheck(440804123456789);
-
-
-
-
-
 // 5. Reflection 
