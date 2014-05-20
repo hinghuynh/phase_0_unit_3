@@ -54,6 +54,8 @@ print_separator
 
 print_lowest_grade_level_speakers(8)
 
+print_separator
+
 print_vote_count
 
 
