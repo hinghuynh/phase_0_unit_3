@@ -27,14 +27,14 @@
 
 def is_fibonacci?(number)
   arr = [0,1]
-  true if number == 0 || number == 1
-  while arr[arr.length - 1] <= number
-    arr << arr[arr.length - 1] + arr[arr.length - 2]
+  while arr[-1] < number 
+    arr << arr[-1] + arr[-2]
   end   
   arr.include?(number) 
 end
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
+
 def random_fibonacci
    [0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,6765,10946].sample
 end
