@@ -53,7 +53,6 @@ voteCount would be ...
 
 */
 
-
 /* Once the votes have been tallied, assign each officer position the name of the 
 student who received the most votes. */
 var officers = {
@@ -93,18 +92,23 @@ for (var position in voteCount ) {
 // __________________________________________
 // Refactored Solution
 
-
-
-
-
+// I don't really know how to refactor this anymore.  The loops seem pretty
+// efficient. I could work on the var names, but I feel they're good enough
+// to get the gist of position of elements I'm referencing too.
 
 // __________________________________________
 // Reflection
 
-
-
-
-
+// This was a difficult exercise. It took quite a long time to figure out how to
+// put names of candidates into vote count. The logic of the loops were not too
+// difficult to figure out, but because I'm so use to be able to call methods on
+// hashes in ruby, it's difficult to get out of that mindset and just use pure loops
+// to get the desire result.  If this votes modified array had more levels, it really
+// would have been nightmarish.  These few javascript exercises really gave me a appreciate
+// for the  language of Ruby. Not only is it way more elegant, but hashes and arrays
+// are built out significantly more in Ruby.  In Javascript, if an array has more than
+// one level of elements, it seems to lose its ability to call any methods from the 
+// array class.
 
 // __________________________________________
 // Driver Code:  Do not alter code below this line.
