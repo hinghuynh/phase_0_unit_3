@@ -74,7 +74,7 @@ function average(array){
 
 var gradebook = {};
 
-for(i = 0; i < students.length; i++){
+for(var i in students){
     gradebook[students[i]] = { testScores: scores[i] }
 }
 

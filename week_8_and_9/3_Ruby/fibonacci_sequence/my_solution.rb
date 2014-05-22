@@ -9,7 +9,6 @@
 
 # 3. Initial Solution
 
-
 # def is_fibonacci?(number)
 # 	arr = [0,1]
 #   while arr[-1] < number 
@@ -18,13 +17,11 @@
 #   arr.include?(number) 
 # end
 
-
 # def is_fibonacci?(number, arr = [0,1])
 # 	return arr.include?(number) if arr[-1] >= number
 # 	arr << arr[-1] + arr[-2]
 # 	is_fibonacci?(number, arr)
 # end
-
 
 # 4. Refactored Solution
 
