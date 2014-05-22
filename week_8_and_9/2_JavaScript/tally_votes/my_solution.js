@@ -93,8 +93,9 @@ for (var position in voteCount ) {
 // Refactored Solution
 
 // I don't really know how to refactor this anymore.  The loops seem pretty
-// efficient. I could work on the var names, but I feel they're good enough
-// to get the gist of position of elements I'm referencing too.
+// efficient, but I might look at other people's solutions later.  I could work on 
+// the var names, but I feel they're good enough to get the gist of position of 
+// elements I'm referencing too.
 
 // __________________________________________
 // Reflection
