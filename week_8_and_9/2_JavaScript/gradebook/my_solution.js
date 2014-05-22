@@ -22,43 +22,43 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
-function average(array){
-    total = 0;
-    for (var i=0 ; i < array.length; i++)
-    {
-      total += array[i];
-    }
-      return total/array.length;
-};
+// function average(array){
+//     total = 0;
+//     for (var i=0 ; i < array.length; i++)
+//     {
+//       total += array[i];
+//     }
+//       return total/array.length;
+// };
 
-var gradebook = {
-    Joseph: { testScores: scores[0] },
+// var gradebook = {
+//     Joseph: { testScores: scores[0] },
 
-    Susan: { testScores: scores[1] },
+//     Susan: { testScores: scores[1] },
 
-    William: { testScores: scores[2] },
+//     William: { testScores: scores[2] },
 
-    Elizabeth: { testScores: scores[3] },
+//     Elizabeth: { testScores: scores[3] },
 
-   getAverage: function getaverage(name){
-        for (var i=0; i < students.length; i++) 
-            {
-            if (name === students[i]) {
-                return average(scores[i]);
-            }        
-        }
-    },
+//    getAverage: function getaverage(name){
+//         for (var i=0; i < students.length; i++) 
+//             {
+//             if (name === students[i]) {
+//                 return average(scores[i]);
+//             }        
+//         }
+//     },
 
-    addScore: function addscore(name, score){
-        for (var i=0; i < students.length; i++)
-            {
-            if (name === students[i]) {
-                scores[i].push(score);
-            }        
-        }
-    }
+//     addScore: function addscore(name, score){
+//         for (var i=0; i < students.length; i++)
+//             {
+//             if (name === students[i]) {
+//                 scores[i].push(score);
+//             }        
+//         }
+//     }
 
-};
+// };
 
 // __________________________________________
 // Refactored Solution
@@ -72,26 +72,19 @@ function average(array){
       return total/array.length;
 };
 
-var gradebook = {
-    Joseph: { testScores: scores[0] },
+var gradebook = {};
 
-    Susan: { testScores: scores[1] },
+for(i = 0; i < students.length; i++){
+    gradebook[students[i]] = { testScores: scores[i] }
+}
 
-    William: { testScores: scores[2] },
-
-    Elizabeth: { testScores: scores[3] },
-
-    getAverage: function getaverage(name){
+gradebook.getAverage = function getaverage(name){
         return average(scores[students.indexOf(name)]);
-  
-    },
+}
 
-    addScore: function addscore(name, score){
-        scores[students.indexOf(name)].push(score);
-    }
-
-};
-
+gradebook.addScore = function addscore(name, score){
+    scores[students.indexOf(name)].push(score);
+}
 
 // __________________________________________
 // Reflect
