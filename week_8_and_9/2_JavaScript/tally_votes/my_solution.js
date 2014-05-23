@@ -96,7 +96,7 @@ for (var position in voteCount ) {
 // efficient, but I might look at other people's solutions later.  I could work on 
 // the var names, but I feel they're good enough to get the gist of position of 
 // elements I'm referencing too. If I were to do that I would created a var name
-// candidateNameTallyCount = votes[voter][office].
+// candidateTallyCount = votes[voter][office].
 
 // __________________________________________
 // Reflection
