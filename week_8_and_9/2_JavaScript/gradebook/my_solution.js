@@ -96,8 +96,9 @@ gradebook.addScore = function addscore(name, score){
 // for arrays. It really angered me, because I realize the only way I could get
 // arrays to equal each other was to assign the object to another variable.  
 // The next thing that was annoying was how I didn't have access to many array
-// functions when there was a multi level array, so I started calling functions
-// on the original arrays, but realize now that this was unnecessary.
+// functions when there was a multi level array, so first I tried loops, then 
+// tried calling functions on the original arrays, but realize now that this too
+// was unnecessary.
 
 // __________________________________________
 // Driver Code:  Do not alter code below this line.
