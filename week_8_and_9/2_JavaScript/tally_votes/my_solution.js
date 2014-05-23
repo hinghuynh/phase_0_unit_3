@@ -96,7 +96,10 @@ for (var position in voteCount ) {
 // efficient, but I might look at other people's solutions later.  I could work on 
 // the var names, but I feel they're good enough to get the gist of position of 
 // elements I'm referencing too. If I were to do that I would created a var name
-// candidateTallyCount = votes[voter][office].
+// candidateTallyCount = votes[voter][office].  I'd really like to be able to get rid
+// the if/else statement in the first loop. I know in ruby i could do += 1 on an nonexisting
+// key[value] in a hash, but it doesn't seem like I can do that in Javascript. 
+
 
 // __________________________________________
 // Reflection
