@@ -8,24 +8,24 @@
 
 
 // 3. Initial Solution
-var cardCheck = function cardCheck(cardNumber) {
-    if (cardNumber.toString().split('').length != 16) {
-        return "ERROR: Invalid number of digits"
-    }
-    else {
-        var numberArray = cardNumber.toString().split('').map(Number);
+// var cardCheck = function cardCheck(cardNumber) {
+//     if (cardNumber.toString().split('').length != 16) {
+//         return "ERROR: Invalid number of digits"
+//     }
+//     else {
+//         var numberArray = cardNumber.toString().split('').map(Number);
 
-        for (var i = 0; i < numberArray.length; i++) {
-            if (i % 2 === 0) {
-                numberArray[i] = numberArray[i] * 2;
-            }
-        }
+//         for (var i = 0; i < numberArray.length; i++) {
+//             if (i % 2 === 0) {
+//                 numberArray[i] = numberArray[i] * 2;
+//             }
+//         }
 
-        numberArray2 = numberArray.join('').toString().split('').map(Number);
+//         numberArray2 = numberArray.join('').toString().split('').map(Number);
 
-        return eval(numberArray2.join('+')) % 10 === 0;
-    }
-}
+//         return eval(numberArray2.join('+')) % 10 === 0;
+//     }
+// }
 
 // 4. Refactored Solution
 var cardCheck = function cardCheck(cardNumber) {
@@ -71,3 +71,13 @@ assert(
 )
 
 // 5. Reflection 
+//
+// This was fun, it was pretty quick to get this working. I actually surprised myself
+// because, I thought it was going to be difficult, because how limited i felt with
+// array functions in the first exercise, but I pretty much had access to every 
+// method that I used in Ruby, only just less efficient and more syntax heavy.  Still
+// this a lot better than what I was expecting. The only thing is that I don't really
+// understand how to write classes or methods like I do in Ruby. so I just made it 
+// one function.  The most tedious part was just finding the avaliable functions
+// in Javascript, after that it was just pretty much trial and error with the node
+// console.

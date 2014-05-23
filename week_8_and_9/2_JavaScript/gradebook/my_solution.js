@@ -64,13 +64,13 @@ var scores = [ [80, 70, 70, 100],
 // Refactored Solution
 
 function average(array){
-    total = 0;
-    for (var i=0 ; i < array.length; i++)
+    sum = 0;
+    for (var i in array)
     {
-      total += array[i];
+      sum += array[i];
     }
-      return total/array.length;
-};
+      return sum/array.length;
+}
 
 var gradebook = {};
 
@@ -89,13 +89,15 @@ gradebook.addScore = function addscore(name, score){
 // __________________________________________
 // Reflect
 
-
-
-
-
-
-
-
+// This assigment took a while, because it was my first assignment in Javascript
+// in about 5 weeks. I was stuck trying to figure out why I couldn't get equality
+// on two arrays with the same exact elements. I then tried [1,2,3] === [1,2,3]
+// in node console and realize that javascript doesn't have equality built in
+// for arrays. It really angered me, because I realize the only way I could get
+// arrays to equal each other was to assign the object to another variable.  
+// The next thing that was annoying was how I didn't have access to many array
+// functions when there was a multi level array, so I started calling functions
+// on the original arrays, but realize now that this was unnecessary.
 
 // __________________________________________
 // Driver Code:  Do not alter code below this line.
