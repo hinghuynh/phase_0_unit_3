@@ -6,7 +6,7 @@ $(document).ready(function(){
 $('body').css({'background-color': 'pink'});
 //RELEASE 1:
   //Add code here to select elements of the DOM 
-var bodyElement = $('body')
+window.bodyElement = bodyElement
  
 //RELEASE 2: 
   // Add code here to modify the css and html of DOM elements
