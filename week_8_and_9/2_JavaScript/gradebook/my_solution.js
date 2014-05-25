@@ -79,11 +79,12 @@ for(var i in students){
 }
 
 gradebook.getAverage = function getaverage(name){
-        return average(scores[students.indexOf(name)]);
+    return average(gradebook[name].testScores)
+
 }
 
 gradebook.addScore = function addscore(name, score){
-    scores[students.indexOf(name)].push(score);
+    gradebook[name].testScores.push(score)
 }
 
 // __________________________________________
