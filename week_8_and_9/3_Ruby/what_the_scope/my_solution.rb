@@ -69,3 +69,10 @@ assert { martin.do_stuff == 12 }
 assert { martin.do_stuff([4,5,6]) == 21 }
 
 # 5. Reflection 
+# This assigment is really mind boggling. Martin and I stared at it for the longest time
+# trying to understand what the heck the purpose of this code was. We still don't know
+# it's true purpose. All we did was assign var_9 a default value of 0 , so it could used 
+# in the loop.  I hope this assigment gets better instructions or just more specific code
+# or at least some driver code to know what it's purpose is. This was a painful assigment.
+# It was very unsatisfying, to not understand the code's purpose and just to add one thing
+# to get it to run.  Oh wells.
