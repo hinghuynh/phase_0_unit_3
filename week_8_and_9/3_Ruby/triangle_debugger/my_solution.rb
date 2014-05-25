@@ -1,7 +1,7 @@
 # U3.W8-9: Triangle Debugger
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself, with: Lienha Carleton].
 
 
 # 1. Original Solution
@@ -65,3 +65,9 @@ assert { valid_triangle?(50, 70, 200) == false }
 assert { valid_triangle?(0, 0, 0) == false}
 
 # 5. Reflection 
+# Again, a pretty easy assigment. The errors were easy to spot.  Didn't really have difficultly
+# figuring out what was making the code not run properly.  This seem like there was really only
+# two real errors, so I had to seperate one error into two errors. I remember creating a solution
+# for this exact problem during the pre Phase 0 prep. It took us a while to figure out what we
+# used for our solution that problem. Instead of trying to refactor the solution at hand, we just
+# created a new solution from scratch. Simple challenge, nothing tedious, enjoyable I guess.
