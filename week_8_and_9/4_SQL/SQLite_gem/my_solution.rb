@@ -36,9 +36,9 @@ def print_separator
   puts 
 end
 
-def print_vote_count
-  puts $db.execute("SELECT name, SUM(voter_id) FROM congress_members JOIN votes ON (congress_members.id=politician_id) GROUP BY name")
-end
+# def print_vote_count
+#   puts $db.execute("SELECT name, SUM(voter_id) FROM congress_members JOIN votes ON (congress_members.id=politician_id) GROUP BY name")
+# end
 
 print_arizona_reps
 
@@ -54,9 +54,9 @@ print_separator
 
 print_lowest_grade_level_speakers(8)
 
-print_separator
+# print_separator
 
-print_vote_count
+# print_vote_count
 
 
 ##### BONUS #######

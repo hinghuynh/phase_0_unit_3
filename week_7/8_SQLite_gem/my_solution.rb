@@ -20,9 +20,9 @@ def print_some_other_states_reps
   other_reps.each { |rep| puts rep }
 end
 
-def print_longest_serving_reps(minimum_years)  
+def print_longest_serving_reps(minimum_years)  #sorry guys, oracle needs me, i didn't finish this!
   puts "LONGEST SERVING REPRESENTATIVES"
-   $db.execute("SELECT name, years_in_congress FROM congress_members WHERE years_in_congress > #{minimum_years}").each {|x,y| puts "#{x} - #{y}" }
+  $db.execute("SELECT name, years_in_congress FROM congress_members WHERE years_in_congress > #{minimum_years}").each {|x,y| puts "#{x} - #{y}" }
 end
 
 def print_lowest_grade_level_speakers(minimum_grade_level)
@@ -36,28 +36,21 @@ def print_separator
   puts 
 end
 
-def print_vote_count
-  puts $db.execute("SELECT name, SUM(voter_id) FROM congress_members JOIN votes ON (congress_members.id=politician_id) GROUP BY name")
-end
 
 print_arizona_reps
-
 print_separator
 
-print_some_other_states_reps
-
-print_separator
-
+# Print out the number of years served as well as the name of the longest running reps
+# output should look like:  Rep. C. W. Bill Young - 41 years
 print_longest_serving_reps(35)
-
 print_separator
 
+# Need to be able to pass the grade level as an argument, look in schema for "grade_current" column
 print_lowest_grade_level_speakers(8)
-
 print_separator
-
-print_vote_count
-
+# Make a method to print the following states representatives as well:
+# (New Jersey, New York, Maine, Florida, and Alaska)
+print_some_other_states_reps
 
 ##### BONUS #######
 # TODO (bonus) - Stop SQL injection attacks!  Statmaster learned that interpolation of variables in SQL statements leaves some security vulnerabilities.  Use the google to figure out how to protect from this type of attack.
@@ -81,5 +74,3 @@ print_vote_count
 # Using the data from congressmen_poll_data database, show the names of congress
 # members from the congress members table of those who have been in congress at
 # least the amount of years given in the argument of the method.
-
-
