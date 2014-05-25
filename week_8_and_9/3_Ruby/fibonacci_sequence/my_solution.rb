@@ -47,5 +47,10 @@ end
 # assert { is_fibonacci?(0) == true }
 # assert { is_fibonacci?(1) == true }
 
-
 # 5. Reflection 
+# This was the best ruby challenge this week. I really like the challenges where
+# there's math logic involved. It was fairly simple to get a working solution 
+# after I understood how the fibonacci sequence is generated.  The refactoring
+# and recursion logic was actual much more difficult.  I really wanted to make
+# this solution a one liner, and it took me quite a while to figure out how.
+# Overall, I really enjoyed this exercise. 
