@@ -1,6 +1,7 @@
 ## Evaluate a Website! 
  
 1) How does this website follow HTML Best Practices? Are there any places where 
+
 it does not?  Provide examples of the "bad" code.
 ```
 Things that this site does well include: closing all tags, all tags being in 
@@ -19,6 +20,7 @@ Yes, i like the way they used HTML tags.  Tags were properly formatted through
 open and close tags and were all in lowercase.
 ``` 
 3) How did the authors handle formatting? Did they include it in the HTML or separate 
+
 it into a CSS file? Or did they do both?  Again, include examples.
 ```
 They did both. Some of the CSS styling was done in a separate CSS file, however 
@@ -43,6 +45,7 @@ that was responsive design friendly was the table proportions, which were set
 in percentages.
 ```
 7) What are your overall thoughts on the HTML/CSS from this website based on 
+
 what you've read?
 ```
 Given how long the HTML file is, I can see why the author chose to save
