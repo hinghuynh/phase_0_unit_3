@@ -1,7 +1,6 @@
 ## Evaluate a Website! 
  
 1) How does this website follow HTML Best Practices? Are there any places where 
-
 it does not?  Provide examples of the "bad" code.
 ```
 Things that this site does well include: closing all tags, all tags being in 
@@ -45,7 +44,6 @@ that was responsive design friendly was the table proportions, which were set
 in percentages.
 ```
 7) What are your overall thoughts on the HTML/CSS from this website based on 
-
 what you've read?
 ```
 Given how long the HTML file is, I can see why the author chose to save
