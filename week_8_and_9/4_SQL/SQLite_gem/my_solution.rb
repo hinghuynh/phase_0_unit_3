@@ -36,9 +36,10 @@ def print_separator
   puts 
 end
 
-# def print_vote_count
-#   puts $db.execute("SELECT name, SUM(voter_id) FROM congress_members JOIN votes ON (congress_members.id=politician_id) GROUP BY name")
-# end
+def print_vote_count
+  puts "POLITICIANS AND THEIR TOTAL VOTE COUNT"
+  $db.execute("SELECT name, SUM(voter_id) FROM congress_members JOIN votes ON (congress_members.id=politician_id) GROUP BY name").each {|x,y| puts "#{x} - #{y}" }
+end
 
 print_arizona_reps
 
@@ -54,18 +55,16 @@ print_separator
 
 print_lowest_grade_level_speakers(8)
 
-# print_separator
+print_separator
 
-# print_vote_count
+print_vote_count
 
 
 ##### BONUS #######
 # TODO (bonus) - Stop SQL injection attacks!  Statmaster learned that interpolation of variables in SQL statements leaves some security vulnerabilities.  Use the google to figure out how to protect from this type of attack.
 
 # TODO (bonus)
-# Create a listing of all of the Politicians and the number of votes they recieved
-# output should look like:  Sen. John McCain - 7,323 votes (This is an example, yours will not return this value, it should just 
-#    have a similar format)
+
 # Create a listing of each Politician and the voter that voted for them
 # output should include the senators name, then a long list of voters separated by a comma
 #
