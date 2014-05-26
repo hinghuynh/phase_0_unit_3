@@ -21,7 +21,7 @@ end
 # 4. Refactored Solution
 
 def reverse_words(string)
-    string.split(' ').to_a.map! { |word| word.reverse }.join(' ')
+    string.split(' ').map! { |word| word.reverse }.join(' ')
 end
 
 # 1. DRIVER TESTS/ASSERT STATEMENTS GO BELOW THIS LINE
