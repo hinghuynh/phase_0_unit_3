@@ -19,7 +19,6 @@ Yes, i like the way they used HTML tags.  Tags were properly formatted through
 open and close tags and were all in lowercase.
 ``` 
 3) How did the authors handle formatting? Did they include it in the HTML or separate 
-
 it into a CSS file? Or did they do both?  Again, include examples.
 ```
 They did both. Some of the CSS styling was done in a separate CSS file, however 
